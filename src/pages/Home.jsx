@@ -1,19 +1,44 @@
-import React from 'react';
-import './Home.css';
+import "./Home.css";
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
+import HappyFace from "../components/HappyFace/HappyFace";
+import {Scene3D} from './Scene3D';
 
 const Home = () => {
+  const el = useRef(null); // Elemento donde se mostrará el texto
+  const typed = useRef(null); // Instancia de Typed.js
+
+  useEffect(() => {
+    const options = {
+      strings: [
+        "Bienvenido",
+        "¡Gracias por visitar!",
+        "Bienvenida",
+      ],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true,
+    };
+
+    // Inicializa Typed.js en el elemento
+    typed.current = new Typed(el.current, options);
+
+    // Destruye la instancia al desmontar el componente
+    return () => {
+      typed.current.destroy();
+    };
+  }, []);
+
   return (
-    <div className="home-container">
-      <svg className="svg-animation" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-        {/* Ejemplo de una línea animada */}
-        <line className="animated-line" x1="100" y1="100" x2="700" y2="100" />
-        {/* Ejemplo de círculo animado */}
-        <circle className="animated-circle" cx="400" cy="300" r="50" />
-        {/* Otros elementos SVG pueden añadirse aquí */}
-      </svg>
-      <div className="content">
-        <h1>¡Hola! Soy [Tu Nombre]</h1>
-        <p>Desarrollador Web</p>
+    <div className="main">
+      <div className="text-container">
+        <h2>Hola, soy Cristian</h2>
+        <span ref={el} />
+        <HappyFace/>
+        <p>Soy ingeniero en sistemas y full stack developer</p>
+      </div>
+      <div className="model-container">
+      <Scene3D/>
       </div>
     </div>
   );
