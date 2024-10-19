@@ -1,8 +1,9 @@
 .container {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1600px;
   position: relative;
   width: 100%;
+  padding: 0 1rem; /* Padding lateral para pantallas pequeñas */
 }
 
 img {
@@ -44,8 +45,9 @@ a {
 
 h1 {
   color: #fff;
-  font-size: 3.8rem;
-  margin: 1rem 29rem 3rem;
+  font-size: 1.8rem;
+  margin: 1rem 0 3rem; /* Margen sin lateral */
+  text-align: center; /* Centrar el texto */
 }
 
 h2 {
@@ -53,9 +55,10 @@ h2 {
   margin: 0;
 }
 
+/* Estilo base para la lista de tarjetas */
 .card-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Dos columnas por defecto */
   gap: 5rem;
 }
 
@@ -136,7 +139,6 @@ li a {
   animation: animateLeft 3s ease-in-out infinite;
 }
 
-
 @keyframes animateTop {
   25% {
     width: 100%;
@@ -197,5 +199,12 @@ li a {
   100% {
     opacity: 1;
     height: 100%;
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .card-list {
+    grid-template-columns: 1fr; /* Cambiar a una columna en pantallas pequeñas */
   }
 }
