@@ -55,6 +55,12 @@ h2 {
   margin: 0;
 }
 
+.name-git{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
 /* Estilo base para la lista de tarjetas */
 .card-list {
   display: grid;
