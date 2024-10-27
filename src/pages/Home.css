@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Monofett&family=Permanent+Marker&family=Wallpoet&display=swap');
-
-body {
-    /*background: url("../assets/ep_naturalwhite.webp");*/
+/*    background: url("../assets/ep_naturalwhite.webp");*/
+ body {
     font-family: "Wallpoet", sans-serif;
     font-weight: 400;
     font-style: normal;
-
-
     background-color: #1f2937;
     background-repeat: repeat;
     background-size: 400px 400px;
+    margin: 0;
+    padding: 0;
 }
 
 .main {
@@ -17,57 +16,59 @@ body {
     flex-direction: row;
     box-sizing: border-box;
     padding: 50px 100px 100px 100px;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva línea en pantallas más pequeñas */
 }
 
 .text-container {
     flex: 0.5;
     padding: 0px;
+    min-width: 300px; /* Asegura que el contenedor no sea demasiado pequeño */
 }
 
 .model-container {
     flex: 0.5;
-    /* Ocupa el otro 50% del ancho disponible */
     display: flex;
-    /* Usar flexbox para centrar contenido */
     align-items: center;
-    /* Alinear verticalmente al centro */
     justify-content: center;
-    /* Alinear horizontalmente al centro */
     padding: 20px;
-    /* Espaciado interno */
     min-height: calc(100vh - 10px);
-    /* Mantener la altura mínima */
+    min-width: 300px; /* Asegura que el contenedor no sea demasiado pequeño */
 }
-
 
 .text-container h2 {
     color: white;
     font-size: 5.25rem;
-    /* 4xl */
     letter-spacing: -0.02em;
-    /* tracking-tight */
     font-weight: 800;
-    /* font-extrabold */
-
-    /* text-gray-900 */
 }
 
 .text-container span {
     color: rgb(88, 88, 228);
     font-size: 3.25rem;
-    /* 4xl */
     letter-spacing: -0.02em;
-    /* tracking-tight */
     font-weight: 800;
-    /* font-extrabold */
 }
 
 .text-container p {
     color: white;
     font-size: 1.75rem;
-    /* 4xl */
     letter-spacing: -0.02em;
-    /* tracking-tight */
     font-weight: 800;
-    /* font-extrabold */
+}
+
+
+@media (max-width:900px){
+    .main {
+        display: block;
+        padding:0;
+    }
+
+    .model-container {
+        flex: 1;
+        display: flex;
+        align-items:center;
+        padding: 0;
+        min-height: calc(100vh - 400px);
+        height: 500px;
+    }
 }

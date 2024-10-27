@@ -4,6 +4,7 @@
   position: relative;
   width: 100%;
   padding: 0 1rem; /* Padding lateral para pantallas pequeñas */
+  overflow: hidden; 
 }
 
 img {
@@ -53,6 +54,7 @@ h1 {
 h2 {
   font-size: 1.3rem;
   margin: 0;
+  padding-bottom: 50px;
 }
 
 .name-git{
@@ -210,6 +212,12 @@ li a {
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
+
+  .container {
+    margin: 0;
+    padding: 0 ;
+  }
+  
   .card-list {
     grid-template-columns: 1fr; /* Cambiar a una columna en pantallas pequeñas */
   }

@@ -17,7 +17,7 @@ const ProjectsPreview = () => {
               </h2>
 
               <a href="https://github.com/tahayk3/Muebles2024DRFReact">
-                <PiGithubLogoDuotone style={{ fontSize: "50px" }} />
+                <PiGithubLogoDuotone style={{ fontSize: "50px", paddingBottom:"50px" }} />
               </a>
             </div>
             <Technologies
@@ -46,7 +46,7 @@ const ProjectsPreview = () => {
               </h2>
 
               <a href="https://github.com/tahayk3/familab">
-                <PiGithubLogoDuotone style={{ fontSize: "50px" }} />
+                <PiGithubLogoDuotone style={{ fontSize: "50px", paddingBottom:"50px" }} />
               </a>
             </div>
             <Technologies items={["Emailjs", "React"]} />
@@ -71,7 +71,7 @@ const ProjectsPreview = () => {
               </h2>
 
               <a href="https://github.com/tahayk3/CatalogoMuebles">
-                <PiGithubLogoDuotone style={{ fontSize: "50px" }} />
+                <PiGithubLogoDuotone style={{ fontSize: "50px", paddingBottom:"50px" }} />
               </a>
             </div>
             <Technologies items={["React", "Emailjs"]} />
@@ -90,7 +90,7 @@ const ProjectsPreview = () => {
               </h2>
 
               <a href="https://github.com/tahayk3/portafolio">
-                <PiGithubLogoDuotone style={{ fontSize: "50px" }} />
+                <PiGithubLogoDuotone style={{ fontSize: "50px", paddingBottom:"50px" }} />
               </a>
             </div>
             <Technologies items={["Supabase", "React"]} />
@@ -103,11 +103,13 @@ const ProjectsPreview = () => {
             <VideoComponent />
             <div className="name-git">
               <h2>
+              <a href="/">
                 Api de la nasa
+              </a>
               </h2>
 
               <a href="https://github.com/tahayk3/reactNativeApiNasa">
-                <PiGithubLogoDuotone style={{ fontSize: "50px" }} />
+                <PiGithubLogoDuotone style={{ fontSize: "50px", paddingBottom:"50px" }} />
               </a>
             </div>
             <Technologies items={["React"]} />
