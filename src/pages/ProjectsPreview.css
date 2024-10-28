@@ -89,6 +89,7 @@ li a {
   border-bottom: 1px solid rgba(57, 255, 20, 0.5);
   border-left: 1px solid rgba(255, 255, 113, 0.5);
   padding: 0.9rem;
+  background-color: rgb(33, 33, 90);
 }
 
 /*borde*/

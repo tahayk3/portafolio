@@ -30,7 +30,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="main">
+   <section id="home">
+     <div className="main">
       <div className="text-container">
         <h2>Hola, soy Cristian</h2>
         <span ref={el} />
@@ -41,6 +42,7 @@ const Home = () => {
       <Scene3D/>
       </div>
     </div>
+   </section>
   );
 };
 

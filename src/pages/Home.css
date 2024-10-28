@@ -71,4 +71,13 @@
         min-height: calc(100vh - 400px);
         height: 500px;
     }
+
+    .text-container h2 {
+        padding-top: 50px;
+        font-size: 3.25rem;
+    }
+
+    .text-container span {
+        font-size: 1.75rem;
+    }
 }

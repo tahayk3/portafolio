@@ -1,16 +1,32 @@
 import "./Navbar.css";
-import {Link} from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-scroll";
 
-const Navbar = () =>{
-    return(
-        <nav className="navbar">
-            <ul>
-                <li><Link to="/">Inicio</Link></li>
-                <li><Link to="projects">Proyectos</Link></li>
-                <li><Link to="contact">Contacto</Link></li>
-            </ul>
-        </nav>
-    );
-}
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <>
+      <button className="menu-toggle" onClick={toggleMenu}>
+        {isOpen ? "✖" : "☰"}
+      </button>
+      <div className={`navbar ${isOpen ? "open" : ""}`}>
+        <img src="/logo.png" alt="" />
+        <Link to="home" smooth={true} duration={500}>
+          Inicio
+        </Link>
+        <Link to="projects" smooth={true} duration={500}>
+          Proyectos
+        </Link>
+        <Link to="contact" smooth={true} duration={500}>
+          Contacto
+        </Link>
+      </div>
+    </>
+  );
+};
 
 export default Navbar;

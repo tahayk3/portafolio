@@ -2,7 +2,8 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import Home from '../pages/Home';
 import ProjectsPreview from '../pages/ProjectsPreview';
 import Navbar from '../components/Navbar/Navbar';
-import About from '../pages/About';
+import Contact from '../pages/Contact';
+import { Toaster } from 'react-hot-toast';
 
 const AppRoutes = () => {
   return (
@@ -10,7 +11,8 @@ const AppRoutes = () => {
       <Navbar />
       <Home />
       <ProjectsPreview />
-      <About/>
+      <Toaster />
+      <Contact/>
     </Router>
   );
 };

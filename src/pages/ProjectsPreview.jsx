@@ -1,11 +1,11 @@
 import Technologies from "../components/Technologies/Technologies";
 import VideoComponent from "../components/VideoComponent/VideoComponent";
-import { IoLogoGithub } from "react-icons/io";
 import { PiGithubLogoDuotone } from "react-icons/pi";
 import "./ProjectsPreview.css";
 const ProjectsPreview = () => {
   return (
-    <div className="container">
+    <section id="projects">
+      <div className="container">
       <section className="card border">
         <h1>Proyectos</h1>
         <ul className="card-list">
@@ -121,6 +121,7 @@ const ProjectsPreview = () => {
         </ul>
       </section>
     </div>
+    </section>
   );
 };
 
