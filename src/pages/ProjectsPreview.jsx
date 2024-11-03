@@ -57,12 +57,7 @@ const ProjectsPreview = () => {
           </li>
           <li className="card border shadow">
             <img src="./mueblesxela.png" alt="" />
-            <h2>
-              <a href="https://tahayk3.github.io/CatalogoMuebles/">
-                Catálogo muebles
-              </a>
-            </h2>
-
+          
             <div className="name-git">
               <h2>
               <a href="https://tahayk3.github.io/CatalogoMuebles/">
@@ -84,7 +79,7 @@ const ProjectsPreview = () => {
             <img src="./portafolio.png" alt="" />
             <div className="name-git">
               <h2>
-              <a href="https://tahayk3.github.io/CatalogoMuebles/">
+              <a href="/">
                 Este portafolío
               </a>
               </h2>
@@ -113,6 +108,26 @@ const ProjectsPreview = () => {
               </a>
             </div>
             <Technologies items={["React"]} />
+            <span className="top"></span>
+            <span className="right"></span>
+            <span className="bottom"></span>
+            <span className="left"></span>
+          </li>
+
+          <li className="card border shadow">
+            <img src="./calculate.png" alt="" />
+            <div className="name-git">
+              <h2>
+              <a href="https://ubiquitous-vacherin-9d80c4.netlify.app/">
+                Calculadora moderma
+              </a>
+              </h2>
+
+              <a href="https://github.com/tahayk3/back-modern-calculator">
+                <PiGithubLogoDuotone style={{ fontSize: "50px", paddingBottom:"50px" }} />
+              </a>
+            </div>
+            <Technologies items={["React", "Gemini", "Go", "Netlify", "Railway", "Emailjs"]} />
             <span className="top"></span>
             <span className="right"></span>
             <span className="bottom"></span>

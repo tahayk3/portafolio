@@ -2,12 +2,15 @@ import { TbBrandDjango } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
-import { SiPostgresql } from "react-icons/si";
+import { SiGo, SiPostgresql } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
 import { SiBlender } from "react-icons/si";
 import { SiAxios } from "react-icons/si";
 import { SiJsonwebtokens } from "react-icons/si";
 import { SiRailway } from "react-icons/si";
+import { SiGooglegemini } from "react-icons/si";
+import { BiLogoNetlify } from "react-icons/bi";
+
 
 import "./Technologies.css";
 
@@ -22,6 +25,10 @@ const icons = [
     {name: "Axios", icono: SiAxios, color: "#000"},
     {name: "Jsonwebtokens", icono: SiJsonwebtokens, color: "#fff"},
     {name: "Railway", icono: SiRailway, color: "#fff"},
+    {name: "Gemini", icono: SiGooglegemini, color: "blue"},
+    {name: "Go", icono: SiGo, color: "#20e0f0"},
+    {name: "Netlify", icono: BiLogoNetlify, color: ""},
+
 ];
 
 const Technologies = ({ items }) => {

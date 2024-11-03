@@ -4,6 +4,7 @@ import ProjectsPreview from '../pages/ProjectsPreview';
 import Navbar from '../components/Navbar/Navbar';
 import Contact from '../pages/Contact';
 import { Toaster } from 'react-hot-toast';
+import Footer from '../pages/Footer';
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
       <ProjectsPreview />
       <Toaster />
       <Contact/>
+      <Footer/>
     </Router>
   );
 };
