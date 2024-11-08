@@ -7,7 +7,8 @@ import { MdAttachEmail } from "react-icons/md";
 import { SiMessenger } from "react-icons/si";
 import { BsWhatsapp } from "react-icons/bs";
 
-
+// react-hot-toast
+import toast from 'react-hot-toast';
 
 const Contact = () => {
   const form = useRef();
@@ -25,11 +26,15 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-         
+          // Notificación de éxito
+          toast.success("¡Mensaje enviado exitosamente!", {
+            duration: 5000,
+          });
         },
         (error) => {
           console.log(error.text);
-      
+          // Notificación de error
+          toast.error("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
         }
       );
     e.target.reset();
