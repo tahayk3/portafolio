@@ -1,9 +1,10 @@
 .contact {
-    margin-top: 2rem;
     color: white;
     text-align: center;
-    padding-top: 2rem;
-    margin-bottom: 5rem;
+    padding-top: 0.1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-bottom: 75px;
 }
 
 .container.contact_container {
@@ -11,7 +12,7 @@
     display: grid;
     grid-template-columns: 20% 80%;
     gap: 12%;
-    padding-top: 5rem;
+    padding-top: 0.1rem;
     padding-bottom: 1rem;
 }
 
