@@ -70,7 +70,7 @@ const Contact = () => {
               <h5>Contactar</h5>
               <a
                 className="mensaje"
-                href="https://api.whatsapp.com/send?phone=50236007835"
+                href=""
               >
                 Enviar un mensaje
               </a>
