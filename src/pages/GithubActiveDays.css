@@ -1,0 +1,62 @@
+
+
+.container-github-active-days h2 {
+  color: #ffffff; /* Color azul similar al de GitHub */
+  font-size: 2.0rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.github-activity-container {
+  background: #282c34; /* similar al dark mode de GitHub */
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #c9d1d9;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+
+
+/* Ajusta el tamaño de cada cuadrado del heatmap */
+.react-calendar-heatmap .react-calendar-heatmap__day {
+  rx: 4px; /* bordes redondeados */
+  ry: 4px;
+}
+
+
+
+/* Colores personalizados */
+.color-empty { fill: #1c2128; }
+.color-scale-1 { fill: #1a1a66; } 
+.color-scale-2 { fill: #3333aa; }  
+.color-scale-3 { fill: #5858e4; }  
+.color-scale-4 { fill: #7d7df0; } 
+
+/* Meses y días */
+.react-calendar-heatmap text {
+  fill: #ffffff;
+  font-size: 10px;
+}
+
+/* Tooltip */
+#heatmap-tooltip {
+  background: #161b22 !important;
+  color: #f0f6fc !important;
+  border-radius: 8px !important;
+  padding: 6px 10px !important;
+  font-size: 1.85rem;
+  border: 1px solid #30363d !important;
+  white-space: normal;
+}
+
+/* Ajusta aún más en pantallas pequeñas */
+@media (max-width: 600px) {
+  #heatmap-tooltip {
+    font-size: 0.75rem !important;
+    padding: 4px 6px !important;
+  }
+}

@@ -20,7 +20,7 @@ const AppRoutes = () => {
         <Toaster />
         <DuolingoCard />
         <Certificates />
-        <GithubActiveDays username="tahayk3" token = "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" />
+        <GithubActiveDays username="tahayk3"  />
         <Contact />
         <Footer />
       </Router>

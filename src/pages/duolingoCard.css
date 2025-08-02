@@ -1,0 +1,79 @@
+.duo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  background-color: #000;
+  margin-bottom: 30px;
+}
+
+.duo-card {
+  background: #000;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+
+  width: 50%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+
+.duo-card:hover {
+  transform: scale(1.05);
+}
+
+.duo-title {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+
+.duo-image-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.duo-image {
+  width: 100%;
+  display: block;
+}
+
+.duo-text {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+
+@media (max-width:900px){
+  .duo-wrapper {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.duo-card {
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+
+  width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.duo-title {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 1px;
+  text-align: center;
+  justify-content: center;
+}
+
+}
