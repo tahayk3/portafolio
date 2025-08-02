@@ -25,5 +25,5 @@ dist-ssr
 
 .env
 
-# Ignorar carpeta de configuración y cache local de Netlify CLI
-.netlify/
+# Local Netlify folder
+.netlify
