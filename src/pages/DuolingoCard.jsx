@@ -1,4 +1,4 @@
-import "./DuolingoCard.css";
+import "./duolingoCard.css";
 
 export default function DuolingoCard() {
   const username = "tahayk3";
